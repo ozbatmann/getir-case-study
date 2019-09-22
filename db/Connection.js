@@ -6,7 +6,12 @@ class Connection {
     static connectToMongo() {
         if ( this.db ) return Promise.resolve(this.db);
         return MongoClient.connect(config.dbUrl, config.options)
-            .then(client => this.db = client.db(config.dbName));
+            .then((client) => {
+                this.db = client.db(config.dbName);
+                console.info("Mongo Client connection established");
+            }).catch((err) => {
+                console.error('Mongo Client connection error: '+err);
+            });
     }
 }
 

@@ -31,9 +31,10 @@ app.use((err, req, res, next) => {
 // I shared the mongoDB connection.
 app.listen(port, () => {
     console.info(`REST API running on port ${port}`);
-
     // Now MongoDB connection is established. Database has been reached.
     // One database connection will be used till the lifetime of the application.
+    // Exception handler
     Connection.connectToMongo();
+
 });
-module.exports = app;
+module.exports = {app};
