@@ -12,7 +12,7 @@ const {app} = require("../app");
 describe("POST /records",() => {
 
     before((done) =>{
-        Connection.connectToMongo().then(() => {
+          Connection.connectToMongo().then(() => {
             done();
         })
     });
@@ -47,7 +47,7 @@ describe("POST requests handling", () => {
             .post("/recordstest")
             .expect(404)
             .end((err,res) =>{
-                res.status.should.equal(404);
+               if(err) return done(err);
                 done();
             });
     });
