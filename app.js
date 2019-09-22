@@ -33,7 +33,6 @@ app.listen(port, () => {
     console.info(`REST API running on port ${port}`);
     // Now MongoDB connection is established. Database has been reached.
     // One database connection will be used till the lifetime of the application.
-    // Exception handler
     Connection.connectToMongo();
 
 });
