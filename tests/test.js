@@ -1,5 +1,4 @@
 var supertest = require("supertest");
-var should = require("should");
 const expect = require("expect");
 
 const { Connection } = require('../db/Connection.js');
