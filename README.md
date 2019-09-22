@@ -8,8 +8,8 @@ Please use the below instructions to test the application.
 - `npm install`
  In order to install libraries used please run `npm install` command.
  
-- `node app.js`
- When the installation ends, by using `node app.js`command you can start the application.
+- `npm start`
+ When the installation ends, by using `npm start`command you can start the application.
 
 
 
