@@ -5,10 +5,10 @@ Please use the below instructions to test the application.
 
 - Go to the root directory of the project you downloaded/cloned. 
 
-- npm install
+- `npm install`
  In order to install libraries used please run `npm install` command.
  
-- node app.js
+- `node app.js`
  When the installation ends, by using `node app.js`command you can start the application.
 
 
